@@ -21,12 +21,12 @@ public class Collect
         // Este es el objeto donde voy a almacenar los elementos de mi stream
         final Supplier<ArrayList<String>> proveedor = ArrayList::new;
 
-        // Aqui tenemos el acumulador, el que a�adira cada elemento del stream al proveedor definido
+        // Aqui tenemos el acumulador, el que añadira cada elemento del stream al proveedor definido
         // arriba
         // BiConsumer<ArrayList<String>, String> acumulador = (list, str) -> list.add(str);
         final BiConsumer<ArrayList<String>, String> acumulador = ArrayList::add;
 
-        // Aqui tenemos el combinador, ya que por ejemplo al usar parallelStream, cada hijo generara
+        // Aquí tenemos el combinador, ya que por ejemplo al usar parallelStream, cada hijo generara
         // su propio proveedor, y al final deberan combinarse
         final BiConsumer<ArrayList<String>, ArrayList<String>> combinador = ArrayList::addAll;
 

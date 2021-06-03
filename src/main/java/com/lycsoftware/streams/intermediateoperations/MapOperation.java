@@ -27,7 +27,7 @@ public class MapOperation
                         .forEach(System.out::println);
 
         final List<Empleado> empleados = Empleado.empleados();
-        System.out.println("Promedio de ingresos de personal femenino mayor a 25 años");
+        System.out.println("Promedio de ingresos de personal femenino mayor a 25 aÃ±os");
         final double suma = empleados.stream()
                         .filter(Empleado::esMujer)
                         .filter(emp -> emp.getEdad() > 25)

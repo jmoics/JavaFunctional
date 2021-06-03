@@ -27,7 +27,7 @@ public class FilterOperation
         empleados.stream().filter(Empleado::esHombre)
             .forEach(empH -> System.out.println(empH.getNombre()));
 
-        System.out.println("\\nEmpleados mayores a 25 años");
+        System.out.println("\\nEmpleados mayores a 25 aÃ±os");
         empleados.stream().filter(emp -> emp.getEdad() > 25)
             .forEach(emp -> System.out.println(emp.getNombre() + " - " + emp.getEdad()));
 
@@ -35,7 +35,7 @@ public class FilterOperation
         empleados.stream().filter(Empleado::esHombre).filter(emp -> emp.getNombre().startsWith("A"))
             .forEach(emp -> System.out.println(emp.getNombre() + " - " + emp.getEdad()));
 
-        System.out.println("\nEmpleados Femeninos mayor a 25 años con ingresos mayor a 4000");
+        System.out.println("\nEmpleados Femeninos mayor a 25 aï¿½os con ingresos mayor a 4000");
         final Predicate<Empleado> empFemenino = Empleado::esMujer;
         final Predicate<Empleado> empMayor25 = emp -> emp.getEdad() > 25;
         final Predicate<Empleado> empMayor4000 = emp -> emp.getIngresos() > 4000;

@@ -31,7 +31,7 @@ public class EjercicioBipredicate
 
         final BiPredicate<Integer, String> criterio = primerCriterio.or(segundoCriterio);
 
-        System.out.println("Empleados de mostrador o ventas mayores a 25 años");
+        System.out.println("Empleados de mostrador o ventas mayores a 25 aÃ±os");
         final List<Empleado> listActual = eval.evaluar(listEmp, criterio);
 
         for (final Empleado emp : listActual) {

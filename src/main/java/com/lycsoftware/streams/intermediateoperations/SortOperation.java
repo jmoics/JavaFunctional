@@ -15,7 +15,7 @@ public class SortOperation
                         .sorted()
                         .forEach(System.out::println);
 
-        System.out.println("\nNúmeros ordenados");
+        System.out.println("\nNÃºmeros ordenados");
         Arrays.asList(1, 7, 3, 8, 9, 6, 4, 6, 2, 3, 12, 56, 98)
                         .stream()
                         .sorted()

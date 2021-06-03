@@ -12,7 +12,7 @@ public class EjercicioBiconsumer
         final BiConsumer<Double, Double> biCons = (num1,
                                                    num2) -> {
             final double mult = num1 * num2;
-            System.out.println("La multiplicacion es: " + mult);
+            System.out.println("La multiplicación es: " + mult);
         };
 
         biCons.accept(21.4, 2.8);
